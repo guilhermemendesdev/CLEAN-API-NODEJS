@@ -1,0 +1,14 @@
+{
+    "compilerOptions": {
+        //Directory where typescript store JS code. 
+        "outDir": "./dist",
+        //To using a new pattern in import and export. 
+        "module": "commonjs",
+        //Version to Ecmascrypt used in project.
+        "target": "es2019",
+        //Convert to an acceptable import and export standard
+        "esModuleInterop": true,
+        //Includ all js file in ./dist
+        "allowJs": true
+    }
+}
