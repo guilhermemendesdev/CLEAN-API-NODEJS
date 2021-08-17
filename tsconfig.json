@@ -9,6 +9,7 @@
         //Convert to an acceptable import and export standard
         "esModuleInterop": true,
         //Includ all js file in ./dist
-        "allowJs": true
+        "allowJs": true,
+        "strictNullChecks": true
     }
 }
