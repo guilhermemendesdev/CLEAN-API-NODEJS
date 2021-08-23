@@ -5,9 +5,13 @@
 
 export default {
   roots: ['<rootDir>/src'],
-  collectCoverageFrom: ['<rootDir>/src/**/*.ts'],
+  collectCoverageFrom: ['<rootDir>/src/**/*.ts', '!<rootDir>/src/presentation/protocols'],
+  coveragePathIgnorePatterns: [
+    "<rootDir>/src/presentation/protocols/",
+    "<rootDir>/src/presentation/controllers/signup/signup-protocols.ts"
+  ],
   coverageDirectory: 'coverage',
-  testEnvironment: 'jest-environment-node',
+  testEnvironment: 'node',
   transform: {
     '.+\\.ts$': 'ts-jest'
   }
